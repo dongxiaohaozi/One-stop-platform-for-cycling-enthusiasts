@@ -1,0 +1,321 @@
+commit 6d65ed26ecc39a2313bdf0bbf5a9991d4fbb3a39
+Merge: 1fb2b9f c35425a
+Author: Yini Jiang <yj40@st-andrews.ac.uk>
+Date:   Fri Apr 8 17:31:47 2022 +0100
+
+    solve conflicts
+
+commit 1fb2b9ff56f1998611cbceb7c515e2d02e8ecc4c
+Author: Yini Jiang <yj40@st-andrews.ac.uk>
+Date:   Fri Apr 8 17:02:03 2022 +0100
+
+    deal with duration is empty and user exists
+
+commit c35425af29dc7eafb115c5d1e1408d67d53d702e
+Author: AlvisChan <ysc1@st-standrews.ac.uk>
+Date:   Fri Apr 8 16:46:27 2022 +0100
+
+    code formatting
+
+commit 13ce7ff70ee47ab9d3252d98e950200d667a5edd
+Author: AlvisChan <ysc1@st-standrews.ac.uk>
+Date:   Fri Apr 8 16:42:57 2022 +0100
+
+    code quality, comment
+
+commit 9bf6a7849505275af95da1cfbf507b6aa1395239
+Author: AlvisChan <ysc1@st-standrews.ac.uk>
+Date:   Fri Apr 8 16:19:17 2022 +0100
+
+    Add Record bugs + layout
+
+commit 3074ae6a7f36f06f9773c6e7a14344a0438a8655
+Author: AlvisChan <ysc1@st-standrews.ac.uk>
+Date:   Fri Apr 8 15:52:35 2022 +0100
+
+    UI improvemen
+
+commit b991d1cbb377a652c80af8e4cd6b108e8a3216f2
+Author: AlvisChan <ysc1@st-standrews.ac.uk>
+Date:   Fri Apr 8 15:41:13 2022 +0100
+
+    client side bug fix
+
+commit da08feab5ffbfb3162760be8585dfdc71ed975e0
+Author: AlvisChan <ysc1@st-standrews.ac.uk>
+Date:   Fri Apr 8 15:31:22 2022 +0100
+
+    weather API
+
+commit 53dc12a5f24f0abb25054b2c35e1707da390e866
+Author: Yini Jiang <yj40@st-andrews.ac.uk>
+Date:   Fri Apr 8 15:17:56 2022 +0100
+
+    delete original server file
+
+commit 133ed567eb44cbc131ff02098e5b642f3d03b0dc
+Author: Yini Jiang <yj40@st-andrews.ac.uk>
+Date:   Fri Apr 8 15:17:30 2022 +0100
+
+    Change the server file name
+
+commit af6428ee9beaebab83dfb6fd9bac83aa8a200fbe
+Author: Yini Jiang <yj40@st-andrews.ac.uk>
+Date:   Fri Apr 8 15:10:50 2022 +0100
+
+    Remove Edit button, Add username
+
+commit 6bf28d5bf9d4a4fd93bb20b769c263fdcd262bef
+Merge: 1525f66 89e96a3
+Author: Yini Jiang <yj40@st-andrews.ac.uk>
+Date:   Fri Apr 8 14:29:50 2022 +0100
+
+    Merge branch 'master' of ssh://pc8-024-l.cs.st-andrews.ac.uk:/cs/group/cs5003-p3-p/mygitrepo
+
+commit 1525f665d8c38797932ef68287b6a2e4b8fed34b
+Author: Yini Jiang <yj40@st-andrews.ac.uk>
+Date:   Fri Apr 8 14:20:15 2022 +0100
+
+    ignore .DS_Store
+
+commit 89e96a3398fd2032a3d90151ca67aff22c747570
+Author: tianliu <tianal@8afbff5d.st-andrews.ac.uk>
+Date:   Fri Apr 8 14:15:18 2022 +0100
+
+    version1.1
+
+commit 1807c411f80e83dcdcc191e15f543318c44620ea
+Merge: ba42bbe e597ba8
+Author: tianliu <tianal@8afbff5d.st-andrews.ac.uk>
+Date:   Fri Apr 8 14:02:14 2022 +0100
+
+    Merge branch 'master' of ssh://pc8-024-l.cs.st-andrews.ac.uk:/cs/group/cs5003-p3-p/mygitrepo
+
+commit e597ba8c96b25f348195afa3909cf1815ec90df0
+Merge: c09e71b 8c1a803
+Author: tianliu <tianal@8afbff5d.st-andrews.ac.uk>
+Date:   Fri Apr 8 13:44:02 2022 +0100
+
+    first version
+
+commit c09e71b3842f0286020688842e2b6ad08608b716
+Author: tianliu <tianal@8afbff5d.st-andrews.ac.uk>
+Date:   Fri Apr 8 13:28:20 2022 +0100
+
+    git issue
+
+commit ba42bbe965aa0f4bb749c7f843cd311bf9e5ea1a
+Author: tianliu <tianal@8afbff5d.st-andrews.ac.uk>
+Date:   Fri Apr 8 12:37:08 2022 +0100
+
+    fix bug
+
+commit 8c1a803fdb43a247e7cf47688facecab2bc95778
+Author: Yini Jiang <yj40@st-andrews.ac.uk>
+Date:   Fri Apr 8 12:15:05 2022 +0100
+
+    Fix PPPPP3.js bug
+
+commit e6554b468d0095b7ea1093545244b2c31df4068e
+Merge: b192375 afa74f4
+Author: Yini Jiang <yj40@st-andrews.ac.uk>
+Date:   Fri Apr 8 11:58:22 2022 +0100
+
+    Merge branch 'master' of s
+    sh://pc8-024-l.cs.st-andrews.ac.uk:/cs/group/cs5003-p3-p/mygitrepo
+
+commit b192375914b6821e4455a5239a1f87d37d45c9ed
+Merge: b9858a1 9666726
+Author: Yini Jiang <yj40@st-andrews.ac.uk>
+Date:   Fri Apr 8 11:41:44 2022 +0100
+
+    Merge branch 'master' of ssh://pc8-024-l.cs.st-andrews.ac.uk:/cs/group/cs5003-p3-p/mygitrepo
+
+commit afa74f475aa4548a009e077231ca01a03a98f886
+Author: tianliu <tianal@8afbff5d.st-andrews.ac.uk>
+Date:   Fri Apr 8 11:36:04 2022 +0100
+
+    filter
+
+commit b9858a12cc70e370f3849d8d4589d4d8e87c1cb5
+Author: Yini Jiang <yj40@st-andrews.ac.uk>
+Date:   Fri Apr 8 11:28:04 2022 +0100
+
+    DSStore
+
+commit be59d334a1a5fa5e327b3b965d06fa6370303240
+Author: Yini Jiang <yj40@st-andrews.ac.uk>
+Date:   Fri Apr 8 11:26:11 2022 +0100
+
+    DS_Store
+
+commit a93117f87a3079659ad523ff9436bcec7a491f27
+Author: Yini Jiang <yj40@st-andrews.ac.uk>
+Date:   Fri Apr 8 11:24:16 2022 +0100
+
+    TianTian and Hao's Update for login/register
+
+commit 966672663cbf6339b9b92979825f55f96646c0ae
+Author: tianliu <tianal@8afbff5d.st-andrews.ac.uk>
+Date:   Thu Apr 7 23:10:19 2022 +0100
+
+    modify
+
+commit 4184e9447bd33a1158610521b6aaaed9f0f38074
+Author: tianliu <tianal@8afbff5d.st-andrews.ac.uk>
+Date:   Thu Apr 7 16:57:17 2022 +0100
+
+    login
+
+commit 27923ad3f3713b31324a0235af8549be7934dbee
+Merge: 2cf4de7 f9f3618
+Author: Yini Jiang <yj40@st-andrews.ac.uk>
+Date:   Thu Apr 7 13:04:18 2022 +0100
+
+    Merge branch 'master' of ssh://pc8-024-l.cs.st-andrews.ac.uk:/cs/group/cs5003-p3-p/mygitrepo
+
+commit f9f3618362f8f1ec119bf59b2f121f300d2d621e
+Author: tianliu <tianal@8afbff5d.st-andrews.ac.uk>
+Date:   Thu Apr 7 12:42:39 2022 +0100
+
+    records
+
+commit 2cf4de764658c53c19be8d08adde3bce65996cf8
+Merge: e4bf759 0dd68ff
+Author: Yini Jiang <yj40@st-andrews.ac.uk>
+Date:   Thu Apr 7 11:34:23 2022 +0100
+
+    Merge branch 'master' of ssh://pc8-024-l.cs.st-andrews.ac.uk:/cs/group/cs5003-p3-p/mygitrepo
+
+commit e4bf7594e51fd42dc4f1548409b7d9a4783c2d3b
+Author: Yini Jiang <yj40@st-andrews.ac.uk>
+Date:   Thu Apr 7 10:08:34 2022 +0100
+
+    .DS_Store banished!
+
+commit 0dd68ff52b4e5c21dee20cae232c174dfc92d1b4
+Author: tianliu <tianal@8afbc71e.st-andrews.ac.uk>
+Date:   Thu Apr 7 03:57:20 2022 +0100
+
+    Register and database
+
+commit bf039a42a1be7d621503ad4d920f40b0ba9718f1
+Author: AlvisChan <ysc1@st-standrews.ac.uk>
+Date:   Wed Apr 6 19:50:08 2022 +0100
+
+    Yini's update
+
+commit 828f5e07dcb80b23a0e7515fdd1d075ffcd71bca
+Author: Yini Jiang <yj40@st-andrews.ac.uk>
+Date:   Wed Apr 6 18:48:51 2022 +0100
+
+    Add edit and delete function
+
+commit 316e8bb52cb0cf61fb82b31036ba8e00dcf28050
+Author: Ruthann Ahmed <ra92@st-andrews.ac.uk>
+Date:   Wed Apr 6 17:45:06 2022 +0100
+
+    stats section added to p3 client and index html, 12 month filter issue atm
+
+commit 507e1cbd10b495e95690cc42fe607706d5d011ee
+Author: tianliu <tianal@8afbc71e.st-andrews.ac.uk>
+Date:   Wed Apr 6 15:52:14 2022 +0100
+
+    login
+
+commit a5ef0838b374219460a1760cec6a9152ae2ec9fd
+Author: AlvisChan <ysc1@st-standrews.ac.uk>
+Date:   Sun Apr 3 21:00:17 2022 +0100
+
+    MApAPI
+
+commit 41106f13e82a05c6d0cb52445da2ab310a6e95ad
+Author: tianliu <tianal@8afbf2bc.st-andrews.ac.uk>
+Date:   Sun Apr 3 15:55:19 2022 +0100
+
+    loginandRegister
+
+commit 92e5ee83310923df33c081a8bd5d1cf0581b859a
+Author: Yini Jiang <yj40@st-andrews.ac.uk>
+Date:   Sat Apr 2 21:53:21 2022 +0100
+
+    connected to DB
+
+commit 2510dc15986440f14f577926f7f9451dda0d2ca3
+Author: Yini Jiang <yj40@st-andrews.ac.uk>
+Date:   Sat Apr 2 21:48:56 2022 +0100
+
+    Connected to DB
+
+commit a76ba8c46371ab4c1d968f7516c2a42f8f1dd9e4
+Author: Ruthann Ahmed <ra92@st-andrews.ac.uk>
+Date:   Sat Apr 2 20:07:46 2022 +0100
+
+    stats files
+
+commit 4d745eefd549073a134de918a374bc9676530d76
+Merge: 66ad1b9 09af134
+Author: Ruthann Ahmed <ra92@st-andrews.ac.uk>
+Date:   Sat Apr 2 17:13:29 2022 +0100
+
+    Merge branch 'master' of ssh://ra92.host.cs.st-andrews.ac.uk:/cs/group/cs5003-p3-p/mygitrepo
+
+commit 66ad1b922c037ca752523a74d30cc9eed26bb051
+Author: Ruthann Ahmed <ra92@st-andrews.ac.uk>
+Date:   Sat Apr 2 17:12:59 2022 +0100
+
+    stats code done but not added to client side, will do when happy
+
+commit 09af134286cac53a11e5665c759b4ecc8c4a0ce8
+Author: Yini Jiang <yj40@st-andrews.ac.uk>
+Date:   Sat Apr 2 16:30:26 2022 +0100
+
+    backup record version-Yini
+
+commit 1961dc8fafaa088d013c932271d4a042fce7eadb
+Author: Yini Jiang <yj40@st-andrews.ac.uk>
+Date:   Sat Apr 2 16:21:01 2022 +0100
+
+    Chanded data structure for record
+
+commit f2295a928e6cfa1f0f8ac4c094bc2ec8b03e0f2a
+Author: Yini Jiang <yj40@st-andrews.ac.uk>
+Date:   Sat Apr 2 16:19:04 2022 +0100
+
+    Changed data structure
+
+commit a95ea656e1ac7ae7d9383516ba59723fb699c5e4
+Author: Yini Jiang <yj40@st-andrews.ac.uk>
+Date:   Sat Apr 2 13:02:14 2022 +0100
+
+    added record table
+
+commit c2171f4d1ed531bb9f6942faac8599cc4ccfce94
+Author: Yini Jiang <yj40@st-andrews.ac.uk>
+Date:   Sat Apr 2 12:59:26 2022 +0100
+
+    Added Record Table
+
+commit 19d3d3ad2a6d1e4b00175cb70f48892aa2fafb9e
+Author: tianliu <tianal@8afbe9a2.st-andrews.ac.uk>
+Date:   Thu Mar 31 17:31:03 2022 +0100
+
+    add record function
+
+commit 9476912576ebc232be51f07a780711fb9cc21c3f
+Author: AlvisChan <ysc1@st-standrews.ac.uk>
+Date:   Wed Mar 30 02:56:30 2022 +0100
+
+    removed login funcitons
+
+commit e4928fbc414c2f5fd88a8f787b9824ed4ce07ea1
+Author: AlvisChan <ysc1@st-standrews.ac.uk>
+Date:   Tue Mar 29 20:31:31 2022 +0100
+
+    basicsv2
+
+commit c9e16b72368d60f4161fd668c9da71d80150cd26
+Author: AlvisChan <ysc1@st-standrews.ac.uk>
+Date:   Tue Mar 29 20:14:15 2022 +0100
+
+    basics

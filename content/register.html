@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="client.css" />
+    <title>register</title>
+
+</head>
+
+<body>
+    <!-- register form -->
+    <form action="" id="RegForm">
+        <h3>Cyclists online platform - Register</h3>
+        <fieldset>
+            <legend>Register</legend>
+            <div><label>Username</label> <input type="text" id="name" required /></div>
+            <!-- <div><label>Family Name</label> <input type="text" id="family-name" required/></div> -->
+            <div>
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div><label>Date of Birth</label> <input type="date" id="DOB" required /></div>
+            <div><label>Current location</label> <input type="text" id="location" /></div>
+            <!-- <div><label>Interest</label> <input type="text" id="interest"/></div> -->
+            <hr />
+            <!-- <div><label>Username</label> <input type="text" id="name" required/></div> -->
+            <div><label>Password</label> <input type="password" id="pass" required /></div>
+            <div><label>Confirm Password</label> <input type="password" id="con-pass" required /></div>
+            <button id="register_button">Register</button>
+            <!-- <input type="reset"> -->
+        </fieldset>
+    </form>
+    <!-- navigate buttons -->
+    <section id="login-page-button">
+        <a href="./index.html">Back to Home</a>
+    </section>
+
+    <script src="./register.js"></script>
+</body>
+
+</html>

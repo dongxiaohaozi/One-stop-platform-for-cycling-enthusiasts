@@ -1,0 +1,201 @@
+* {
+    margin: 1px;
+    padding: 2px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
+
+#Register,
+#login-page-button a {
+    float: right;
+}
+
+#Register a,
+#login-page-button a {
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgba(28, 110, 164, 0.29);
+    border-radius: 10px;
+}
+
+#private-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+#logout_button {
+    float: right;
+}
+
+#quick-review {
+    background-color: lightgrey;
+}
+
+#quick-review article {
+    background-color: lightgreen;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#quick-review article h2 {
+    font-size: 15px;
+}
+
+#quick-review article {
+    font-size: 12px;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+/* container to center the map */
+#map-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+#map {
+    height: 80vh;
+    width: 80vh;
+
+}
+
+#history-table-wrapper {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+#history-table th {
+    min-width: 150px;
+}
+
+
+/* google map API */
+.jumbotron {
+    margin: 0;
+    padding: 10px;
+}
+
+.jumbotron h3 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+.jumbotron h3,
+.jumbotron p {
+    text-align: center;
+
+}
+
+.jumbotron p {
+    font-size: 2em;
+}
+
+#distance-map {
+    flex-basis: 0;
+    flex-grow: 4;
+    height: 100%;
+}
+
+#output {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px auto;
+}
+
+#distance-map-container,
+#distance-map {
+    flex-basis: 0;
+    flex-grow: 4;
+    height: 25em;
+    width: 50em;
+}
+
+.long-input {
+    width: 300px;
+}
+
+.hints {
+    font-size: 80%;
+    color: grey;
+}
+.img{
+    cursor:pointer;
+}
+
+
+#jumbotron {
+    border: medium groove #74cc54;
+}
+
+#distance-result {
+    border: medium groove #c68b4b;
+}
+
+#addButton {
+    background-color: #53b5e7;
+    border-radius: 10%;
+    float: right;
+
+}
+
+#addButtonLink {
+    color: white;
+}
+
+#weather-result-table {
+    border: 3px solid rgb(74, 188, 222);
+}
+
+#weather-result-table tr:nth-child(odd) {
+    background-color: #3dc9cb;
+}
+
+#weather-result-table tr:nth-child(even) {
+    background-color: #a6ddea;
+}
+
+#weather-container {
+    display: none;
+}

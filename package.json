@@ -1,0 +1,19 @@
+{
+  "name": "cs5003_p3",
+  "version": "2.0.0",
+  "description": "cycling records mananger",
+  "main": "index.js",
+    "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "[CS5003 P3 Group P]",
+  "license": "ISC",
+  "dependencies": {
+    "basic-auth": "^2.0.1",
+    "express": "^4.17.2",
+    "express-basic-auth": "^1.2.1",
+    "googleapis": "^100.0.0",
+    "mongodb": "^4.5.0",
+    "nanoid": "^3.3.0"
+  }
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" type="text/css" href="client.css" />
+	<script src="https://kit.fontawesome.com/934fdbb6ed.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title>Add a new record</title>
+
+</head>
+
+<body>
+	<section>
+		<form id="AddRecord">
+			<h1>Add a New Record or Plan</h1>
+			<p>You may record or plan your cycling route on this page!</p>
+			<fieldset id="record_field">
+				<legend>Add</legend>
+				<div><label>Username</label> <input type="text" id="Username" /></div>
+				<p class="hints">Please input your username to confirm your identity</p>
+				<br />
+				<div><label>Date</label> <input type="date" id="RecordDate" /> <button type="button" id="weather-submit"
+						onclick="checkWeather()">Check 7 days weather forcast</button></div>
+				<p class="hints">If you are planning, you may like to chek out the weather forcast! </p>
+				<br />
+				<div>
+					<label for="RecordType">Type</label>
+					<select id="RecordType" name="RecordType" required>
+						<option value="Road Race">Road Races</option>
+						<option value="Mountain Biking">Mountain Biking</option>
+						<option value="BMX racing">BMX racing</option>
+						<option value="Ultra-distance">Ultra-distance Races</option>
+						<option value="Daily Commutes">Daily Commutes</option>
+					</select>
+				</div>
+				<br />
+				<div>
+					<label>Distance (in km)</label><input type="text" id="distance" />
+					<p class="hints">Distance calculator can estimated the distance for a specific route.</p>
+				</div>
+				<br />
+				<div>
+					<label>Duration</label>
+					<input type="time" id="start">
+					<input type="time" id="end">
+					<p class="hints">Distance calculator can estimated the required cycling duration for an average
+						persion.</p>
+				</div>
+			</fieldset>
+		</form>
+	</section>
+	<section id="">
+		<button id="reset" onclick="reset()">Reset</button>
+		<button id="confirm"
+			onclick='confirm("Do you want to submit? You will be logged out after the submission.")'>Confirm</button></a>
+		<a href="./index.html">Back to Home</a>
+	</section>
+
+	<div id="RecordsList"></div>
+
+	<!-- weather check -->
+	<div id="weather-container">
+		<h3> Weather Check Result</h3>
+
+		<div id="weather-result">
+			<table id="weather-result-table">
+				<tr>
+					<th>Date</th>
+					<th>General description</th>
+					<th>Temperate</th>
+					<th>Feels like</th>
+					<th>Likelihood of raining</th>
+					<th>Humidity</th>
+					<th>windspeed</th>
+				</tr>
+
+			</table>
+		</div>
+
+
+	</div>
+
+	<!-- distance calculator -->
+	<div id="jumbotron">
+		<div class="container fluid">
+			<h3> Distance Calculator </h3>
+			<p class="hints">By inputting two locations, this calculator estimate the cycling distance and cycling
+				duration</p>
+			<form class="form-horizontal" id="distance-form">
+
+				<div class="form-group">
+					<label for="from" class="distination-label "><i
+							class="fa-solid fa-location-arrow"></i>Origin</label>
+					<div id="from-input-container">
+						<input type="text" id="from" placeholder="Please enter your origin"
+							class="form-control long-input" required>
+
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="to" class="distination-label"><i
+							class="fa-solid fa-location-arrow"></i>Destination</label>
+					<div id="to-input-container">
+						<input type="text" id="to" placeholder="Please nter your destination"
+							class="form-control long-input" required>
+
+					</div>
+				</div>
+				<!-- //button -->
+				<button type="button" id="distance-moreWaypoint">Add more waypoints</button>
+				<!-- waypoint -->
+				<div class="form-group">
+					<label><i class="fa-solid fa-location-arrow"></i>Waypoint (if any)</label>
+					<div>
+						<input type="text" placeholder="Please enter your waypoint"
+							class="form-control long-input waypoint-distance">
+					</div>
+				</div>
+
+			</form>
+			<div>
+				<button id="distance-form-submit" type="submit" value="submit" form="distance-form"
+					class="from-to-button"> <i class="fa-solid fa-magnifying-glass"></i>Search</button>
+			</div>
+
+		</div>
+
+		<div id="distance-map-container" class="container fluid">
+			<div id="distance-result"></div>
+
+			<div id="distance-map"></div>
+
+		</div>
+	</div>
+
+	<script src="./addRecord.js"></script>
+
+	<!-- gogole map API -->
+	<script async
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANSduMIrqMfW_K51kolJjATj93ezKaly4&libraries=places&callback=initMap"></script>
+
+	<!-- moment js library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+</body>
+
+</html>

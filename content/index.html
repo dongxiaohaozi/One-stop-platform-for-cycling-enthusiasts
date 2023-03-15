@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/934fdbb6ed.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="client.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <title>CS5003 P3</title>
+</head>
+
+<body>
+    <h1>Cyclists online platform</h1>
+    <!-- login.register option -->
+    <seciton id="Register">
+        <!-- <a href="./login.html">To login</a> -->
+        <a href="./register.html">To register</a>
+    </seciton>
+
+    <!-- public section -->
+    <section id="public">
+        <div id=""> Please login to use the platform. Your cycling route would only be record after you have created an
+            account and logined. </div>
+    </section>
+
+
+    <fieldset id="login">
+        <legend>Login</legend>
+        <div><label>Username</label> <input type="text" id="name" /></div>
+        <div><label>Password</label> <input type="password" id="pass" /></div>
+        <button id="loginButton">Login</button>
+    </fieldset>
+
+    <!-- private section -->
+    <section id="private">
+
+        <!-- <div id="private_msg"></div> -->
+        <div id="private_buttons">
+            <p>Welcome! You have logged in.</p>
+            <p>Don't have a good day, have a great day!</p>
+            <button id="logout_button" onClick="window.location.reload();">Logout</button>
+        </div>
+
+        <section id="private-container">
+            <section id="quick-review">
+                <article id="personal-info">
+
+                    <h2>Personal Infomation</h2>
+                    <hr />
+                    <table>
+                        <tr>
+                            <th>User Name</th>
+                            <td id="Username"></td>
+                        </tr>
+                        <tr>
+                            <th>Gender</th>
+                            <td id="gender"></td>
+                        </tr>
+                        <tr>
+                            <th>Date of Birth</th>
+                            <td id="dateBirth"></td>
+                        </tr>
+                        <tr>
+                            <th>City</th>
+                            <td id="city"></td>
+                        </tr>
+                    </table>
+                </article>
+
+                <!--Statistcs page -->
+                <article id="personal-best">
+                    <h2>Personal best</h2>
+                    <hr />
+                    <div id="personal-best-speed"></div>
+                    <table>
+                        <tr>
+                            <th>Achieved date</th>
+                            <td id="achieveddatebest"></td>
+                        </tr>
+                        <tr>
+                            <th>Distance of the Ride</th>
+                            <td id="distance-best"></td>
+                        </tr>
+                        <tr>
+                            <th>Duration of the Ride</th>
+                            <td id="achieved-time-best"></td>
+                        </tr>
+                        </tr>
+                        <th>Average Speed of the Ride</th>
+                        <td id="mean"></td>
+                        </tr>
+                        <tr>
+                            <th>Start Time of the Ride</th>
+                            <td id="start-time-best"></td>
+                        </tr>
+                        <tr>
+                            <th>Type of race</th>
+                            <td id="type-of-race"></td>
+                        </tr>
+                    </table>
+                </article>
+
+                <article id="Latest-Ride">
+                    <h2>Latest Ride</h2>
+                    <hr />
+                    <div id="latest-ride-info"></div>
+                    <table>
+                        <tr>
+                            <th>Achieved date</th>
+                            <td id="date-last"></td>
+                        </tr>
+                        <tr>
+                            <th>Distance of the Ride</th>
+                            <td id="distance-last"></td>
+                        </tr>
+                        <tr>
+                            <th>Duration of the Ride</th>
+                            <td id="time-last"></td>
+                        </tr>
+                        </tr>
+                        <th>Average Speed of the Ride</th>
+                        <td id="mean-last"></td>
+                        </tr>
+                        <tr>
+                            <th>Start Time of the Ride</th>
+                            <td id="start-time-last"></td>
+                        </tr>
+                        <tr>
+                            <th>Type of race</th>
+                            <td id="type-of-race-last"></td>
+                        </tr>
+                    </table>
+                </article>
+                <article id="25km-sec">
+                    <h2>25km Rides</h2>
+                    <hr />
+                    <div id="25km-speed"></div>
+                    <table>
+                        <tr>
+                            <th>Achieved date</th>
+                            <td id="25km-date"></td>
+                        </tr>
+                        <th>Duration of the Ride</th>
+                        <td id="25km-dur"></td>
+                        </tr>
+                        </tr>
+                        <th>Average Speed of the Ride</th>
+                        <td id="25km-mean"></td>
+                        </tr>
+                        <tr>
+                            <th>Start Time of the Ride</th>
+                            <td id="start-25km"></td>
+                        </tr>
+                        <tr>
+                            <th>Type of race</th>
+                            <td id="25km-typerace"></td>
+                        </tr>
+                    </table>
+                </article>
+            </section>
+
+            <section id="tabs">
+
+
+                <section id="display-panel">
+                    <!-- Tab links -->
+                    <div class="tab">
+                        <button class="tablinks" onclick="openTap(event, 'history-container')">My Trips</button>
+                        <button class="tablinks" onclick="openTap(event, 'calendar-container')">Calendar</button>
+                        <button class="tablinks" onclick="openTap(event, 'map-container')">Route Recommendation</button>
+                        <button class="tablinks" onclick="openTap(event, 'graph-container')">Statistic Graph</button>
+                        <button class="tablinks" id="addButton"><a id="addButtonLink" href="./addRecord.html"><i
+                                    class="fa-solid fa-plus"></i>Add Record</a></button>
+                    </div>
+
+                    <!-- Tab content -->
+                    <div id="add-container" class="tabcontent">
+                        <h3>Add a new Record/Plan</h3>
+                        <div>To be added</div>
+                        <div>
+                            <!-- <label>Add a Record</label> -->
+                            <a id="transfer"></a>
+                        </div>
+                    </div>
+
+                    <!--Record Start-->
+                    <div id="history-container" class="tabcontent">
+                        <!--<h3>History</h3>-->
+                        <div id="history-table-wrapper">
+                            <p class="hints">On this tab, you may review and delete your cycling records.</p>
+                            <label for="selectType">Please select a type: </label>
+                            <select id="selectType" onchange="updateTable()"></select>
+                            <div id="resultCount"></div>
+                            <table id="history-table">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Type</th>
+                                        <th>Distance</th>
+                                        <th>Duration</th>
+                                        <th>Average Speed</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="history-table-body"></tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                    <!--Record Finish-->
+
+                    <!--Calendar Start-->
+                    <div id="calendar-container" class="tabcontent" id="defaultOpen">
+                        <div class="container col-sm-12 col-md-12 col-lg-12 mt-12">
+                            <div class="card">
+                                <!-- display month and year -->
+                                <h3 class="card-header" id="calendarHeader"></h3>
+
+                                <!-- form to allow display navigation -->
+                                <form class="form-inline">
+                                    <label class="lead mr-2 ml-2" for="month">Navigate To: </label>
+                                    <select class="form-control col-sm-4" name="month" id="month" onchange="jump()">
+                                        <option value=0>Jan</option>
+                                        <option value=1>Feb</option>
+                                        <option value=2>Mar</option>
+                                        <option value=3>Apr</option>
+                                        <option value=4>May</option>
+                                        <option value=5>Jun</option>
+                                        <option value=6>Jul</option>
+                                        <option value=7>Aug</option>
+                                        <option value=8>Sep</option>
+                                        <option value=9>Oct</option>
+                                        <option value=10>Nov</option>
+                                        <option value=11>Dec</option>
+                                    </select>
+
+
+                                    <label for="year"></label>
+                                    <select class="form-control col-sm-4" name="year" id="year" onchange="jump()">
+
+                                    </select>
+                                </form>
+                                <table class="table table-bordered table-responsive-sm" id="calendar">
+                                    <thead>
+                                        <tr>
+                                            <th>Sun</th>
+                                            <th>Mon</th>
+                                            <th>Tue</th>
+                                            <th>Wed</th>
+                                            <th>Thu</th>
+                                            <th>Fri</th>
+                                            <th>Sat</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody id="calendar-body">
+
+                                    </tbody>
+                                </table>
+
+                                <div class="form-inline">
+
+                                    <button class="btn btn-outline-primary col-sm-6" id="previous"
+                                        onclick="previous()"><i class="fa-solid fa-angle-left"></i>Previous</button>
+
+                                    <button class="btn btn-outline-primary col-sm-6" id="next" onclick="next()">Next<i
+                                            class="fa-solid fa-angle-right"></i></button>
+                                </div>
+                                <br />
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--Calendar Finish-->
+
+                    <div id="map-container" class="tabcontent">
+
+                        <div class="container fluid">
+                            <h3> Recommending routes </h3>
+                            <p class="hints">Did you have some great cyclign experience? Recommend route to your mates!
+                            </p>
+                            <form class="form-horizontal" id="recommendation-form">
+
+                                <div class="form-group">
+                                    <label for="from-recommendation" class="origin-label"><i
+                                            class="fa-solid fa-location-arrow"></i>Origin</label>
+                                    <div id="from-input-container-recommendation">
+                                        <input type="text" id="from-recommendation"
+                                            placeholder="Please enter your origin" class="form-control long-input"
+                                            required>
+
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="to-recommendation" class="distination-label"><i
+                                            class="fa-solid fa-location-arrow"></i>Destination</label>
+                                    <div id="to-input-container-recommendation">
+                                        <input type="text" id="to-recommendation"
+                                            placeholder="Please enter your destination" class="form-control long-input"
+                                            required>
+
+                                    </div>
+                                </div>
+
+                                <button type="button" id="moreWaypoint">Add more waypoints</button>
+
+                                <div class="form-group">
+                                    <label><i class="fa-solid fa-location-arrow"></i>Waypoint (if any)</label>
+                                    <div>
+                                        <input type="text" placeholder="Please enter your waypoint"
+                                            class="form-control long-input waypoint-recommendation">
+                                    </div>
+                                </div>
+
+
+                            </form>
+                            <div>
+                                <button id="recommendation-form-submit" type="submit" value="submit"
+                                    form="recommendation-form" class="from-to-button"
+                                    onclick="confirm('Do you want to recommend it?')"> <i
+                                        class="fa-solid fa-magnifying-glass"></i>Recommend</button>
+                            </div>
+
+                        </div>
+                        <div id="map"></div>
+                    </div>
+
+                    <div id="graph-container" class="tabcontent">
+
+                        <div>
+                            <select name="option" id="option">
+                                <option value="all">All</option>
+                                <option value="Road Race">Road Races</option>
+                                <option value="Mountain Biking">Mountain Biking</option>
+                                <option value="BMX racing">BMX racing</option>
+                                <option value="Ultra-distance">Ultra-distance</option>
+                                <option value="Daily Commutes">Daily Commutes</option>
+                            </select>
+
+                            <div id='plot'></div>
+                        </div>
+                    </div>
+
+                </section>
+
+            </section>
+
+        </section>
+    </section>
+    </section>
+
+</body>
+
+<script src="./client.js"></script>
+
+<!-- gogole map API -->
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANSduMIrqMfW_K51kolJjATj93ezKaly4&libraries=places&callback=initMap">
+    </script>
+
+</html>
